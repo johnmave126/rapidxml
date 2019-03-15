@@ -420,7 +420,7 @@ namespace rapidxml
     template<class Ch> 
     inline std::basic_ostream<Ch> &print(std::basic_ostream<Ch> &out, const xml_node<Ch> &node, int flags = 0)
     {
-        print(std::ostream_iterator<Ch>(out), node, flags);
+        print(std::ostream_iterator<Ch, Ch>(out), node, flags);
         return out;
     }
 
